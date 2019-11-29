@@ -1,0 +1,20 @@
+{
+    "name": "pink3vil/manager",
+    "authors": [
+        {
+            "name": "Skyreka",
+            "email": "contact@skyreka.com"
+        }
+    ],
+    "require": {
+      "altorouter/altorouter": "^1.2",
+        "league/plates": "^3.3",
+        "phpmailer/phpmailer": "^6.0",
+        "ext-pdo": "*"
+    },
+    "autoload": {
+      "psr-4" : {
+        "Manager\\": "src/"
+      }
+    }
+}
