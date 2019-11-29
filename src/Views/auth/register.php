@@ -46,7 +46,7 @@
 						<?php if (!empty($success)): ?>
               <div class="alert alert-success"><?= $success; ?></div>
             <?php endif; ?>
-						<img src="images/logoofficiel.png" alt="logo" style="width:100%;">
+						<img src="images/logoofficiel.png" alt="logo" style="width:90%;">
 						<form data-toggle="validator" role="form" class="form-horizontal form-material" id="loginform" action="<?= $router->generate('register'); ?>" method="POST">
 							<div class="form-group ">
 								<div class="col-xs-6">
