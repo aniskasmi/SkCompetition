@@ -32,7 +32,7 @@ class MainController extends CoreController {
   public function home() {
     $this->restrict();
     $competitionStatus = false;
-    if ($this->user->getStatus() === 0) {
+    if ($this->user->getStatus() == 0) {
       $this->redirect('error404');
     }
     if ($competitionStatus) {
