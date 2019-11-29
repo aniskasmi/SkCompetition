@@ -10,7 +10,7 @@
   <div class="scroll-sidebar">
     <nav class="sidebar-nav">
       <ul id="sidebarnav">
-        <?php $competitionStatus = true; if ($competitionStatus): ?>
+        <?php $competitionStatus = false; if ($competitionStatus): ?>
           <li class="nav-small-cap">Classement Général</li>
           <ul style="padding-left: 20px !important">
             <?php foreach ($users::findAll() as $index => $user): ?>

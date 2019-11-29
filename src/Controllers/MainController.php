@@ -16,7 +16,7 @@ class MainController extends CoreController {
 
   public function homeIn() {
     $this->restrict();
-    if ($this->user->getStatus() === 0) {
+    if ($this->user->getStatus() == 0) {
       $this->redirect('error404');
     }
 
@@ -31,7 +31,7 @@ class MainController extends CoreController {
 
   public function home() {
     $this->restrict();
-    $competitionStatus = true;
+    $competitionStatus = false;
     if ($this->user->getStatus() === 0) {
       $this->redirect('error404');
     }
